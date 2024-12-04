@@ -4,16 +4,16 @@ f = aocd.get_data(day=4, year=2024)
 
 count = 0
 tab = []
-wallSize = 3
+thickness = 3
 
-for i in range(wallSize):
-    tab.append("." * (wallSize * 2 + len(f.splitlines()[0])))
+for i in range(thickness):
+    tab.append("." * (thickness * 2 + len(f.splitlines()[0])))
 
 for currentLine in f.splitlines():
-    tab.append("." * wallSize + currentLine + "." * wallSize)
+    tab.append("." * thickness + currentLine + "." * thickness)
 
-for i in range(wallSize):
-    tab.append("." * (wallSize * 2 + len(f.splitlines()[0])))
+for i in range(thickness):
+    tab.append("." * (thickness * 2 + len(f.splitlines()[0])))
 
 for y in range(len(tab)):
     for x in range(len(tab[0])):
