@@ -2,7 +2,6 @@ import aocd
 
 
 def combine(expected_total, so_far_total, remaining_numbers):
-    m = False
     if len(remaining_numbers) == 0:
         if expected_total == so_far_total:
             return True
