@@ -26,4 +26,4 @@ for k, v in positions.items():
     if k[0] > rows // 2 and k[1] < cols // 2: q3 += v
     if k[0] > rows // 2 and k[1] > cols // 2: q4 += v
 
-print(f"Factor: {q1*q2*q3*q4}")
+print(f"Factor: {q1 * q2 * q3 * q4}")
